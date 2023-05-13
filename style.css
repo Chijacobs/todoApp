@@ -1,0 +1,162 @@
+/*<style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>*/
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.banner1 {
+    width: 100%;
+    height: 500px;
+    background: url("./images/bg-desktop-dark.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-content {
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30vh;
+}
+
+.banner-content img {
+    height: 32px;
+}
+
+h2 {
+    letter-spacing: 3px;
+    color: #fff;
+}
+
+.todo {
+    width: 500px;
+    max-height: 450px;
+}
+
+.form {
+    width: 100%;
+    height: 80px;
+}
+
+.form-control {
+    width: 100%;
+    border-radius: 4px;
+    padding: 15px 30px;
+    margin-top: 1.75rem;
+    font-size: 15px;
+    border: none;
+    letter-spacing: 1px;
+    outline: none;
+}
+/*
+input::placeholder {
+    color: #fff !important;
+    letter-spacing: 1.5px;
+}*/
+
+.list{
+    margin-top: 1.75rem;
+    max-height: 320px;
+}
+
+.todo-container{
+    background-color: hsl(235, 24%, 19%);
+    border-radius: 5px;
+}
+
+.todo-list {
+    display: flex;
+    align-items: center;
+    padding: 1rem 0.9rem;
+    background-color:hsl(235, 24%, 19%);
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    font-style: italic;
+    font-style: 17px;
+}
+
+.todo-list p {
+    color: #fff;
+    width: 90%;
+}
+
+.check {
+    width: 25px;
+    height: 25px;
+    border: 1px solid hsl(233, 14%, 35%);
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+    margin-right: 0.9rem;
+    cursor: pointer;
+}
+
+.check img {
+    transform: scale(0);
+    transition: all 0.5s ease;
+}
+
+.close {
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    opacity: 0;
+    transition: all 0.3s ease;
+
+}
+
+.todo-list:hover .close {
+    opacity: 1;
+}
+
+.hr {
+    width: 100%;
+    background: hsl(233, 14%, 35%);
+    height: 0.8px;
+}
+
+.details {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: hsl(234, 11%, 52%);
+    padding: 0.9rem 0.8rem;
+    background-color: hsl(235, 24%, 19%);
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius:5px;
+    cursor: pointer;
+}
+
+.details p:hover {
+    color: hsl(220, 98%, 61%);
+}
+
+.options {
+   display: flex; 
+}
+
+.options p {
+    padding: 1px;
+}
+
+.active {
+    color: hsl(220, 98%, 61%);
+}
+
+.active-check {
+    background: linear-gradient(hsl(192, 100%, 67%) , hsl(280, 87%, 65%));
+}
+/*
+.active-check img{
+    transform: scale(1)!important;
+}*/
